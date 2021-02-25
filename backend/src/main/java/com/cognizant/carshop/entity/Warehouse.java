@@ -20,7 +20,7 @@ public class Warehouse {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "car")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "warehouse")
     private Set<Car> cars;
 
 
