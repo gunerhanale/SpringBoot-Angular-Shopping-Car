@@ -21,7 +21,7 @@
                         
                         
                         <div class="price">{{ tempCar.price | currency:'EUR' }}</div>
-                        <button (click)="addToCart(tempCar)" class="btn btn-primary btn-sm">Add to cart</button>
+                        <button *ngIf="tempCar.licensed == true" (click)="addToCart(tempCar)" class="btn btn-primary btn-sm">Add to cart</button>
                     </div>
                 </div>
                 
