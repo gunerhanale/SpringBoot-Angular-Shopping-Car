@@ -42,6 +42,6 @@ public class Car {
 
     @Column(name = "date_added")
     @CreationTimestamp
-    private Date dataAdded;
+    private Date dateAdded;
 
 }

@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @CrossOrigin("http://localhost:4200")
 public interface CarRepository extends JpaRepository<Car,Long> {
 
-    Page<Car> findByWarehouseId(@RequestParam("id") Long id, Pageable pageable);
+    Page<Car> findByWarehouseIdOrderByDateAddedAsc(@RequestParam("id") Long id, Pageable pageable);
 }

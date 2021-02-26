@@ -6,5 +6,5 @@ export class Car {
     price: number;
     licensed: boolean;
     location: string;
-    dataAdded: Date;
+    dateAdded: Date;
 }

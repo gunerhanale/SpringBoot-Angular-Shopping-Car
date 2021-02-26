@@ -23,7 +23,7 @@ export class CarService {
   getCarList(theWarehouseId: number): Observable<Car[]>{
 
     // need to build URL based on category id
-    const searchUrl = `${this.baseUrl}/search/findByWarehouseId?id=${theWarehouseId}`;
+    const searchUrl = `${this.baseUrl}/search/findByWarehouseIdOrderByDateAddedAsc?id=${theWarehouseId}`;
 
     return this.httpClient.get<GetResponseCars>(searchUrl).pipe(
       map(response => response._embedded.cars)
