@@ -14,7 +14,7 @@
 
 ## Database Schema
 
-![](https://github.com/gunerhanale/SpringBoot-Angular-Shopping-Car/blob/main/create-schema-tables.sql)
+  - https://github.com/gunerhanale/SpringBoot-Angular-Shopping-Car/blob/main/create-schema-tables.sql
 
 ## How to  Run
 
