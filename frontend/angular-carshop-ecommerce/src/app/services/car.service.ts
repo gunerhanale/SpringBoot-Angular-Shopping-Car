@@ -10,6 +10,7 @@ import { CarWarehouse } from '../common/car-warehouse';
   providedIn: 'root'
 })
 export class CarService {
+  
 
   private appUrl = environment.ecommerceAppUrl;
 
@@ -29,12 +30,19 @@ export class CarService {
     );
   }
 
+  getCar(theCarId: number): Observable<Car> {
+    const carUrl = `${this.baseUrl}/${theCarId}`;
+
+    return this.httpClient.get<Car>(carUrl);
+  }
+
   getCarWarehouses(): Observable<CarWarehouse[]> {
 
     return this.httpClient.get<GetResponseCarWarehouse>(this.warehouseUrl).pipe(
       map(response => response._embedded.carWarehouse)
     );
   }
+
 
 }
 

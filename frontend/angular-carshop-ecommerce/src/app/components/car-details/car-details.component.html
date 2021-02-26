@@ -1,0 +1,17 @@
+<div class="detail-section">
+    <div class="container-fluid">
+
+        <img src="assets/images/logo.png" class="detail-img">
+       
+        <h3>{{car.make}}: {{car.model}} ({{car.yearModel}}) </h3>
+        <div class="price">{{ car.price | currency:'EUR' }}</div>
+    <!--   <button (click)="addToCart()" class="btn btn-primary btn-sm">Add to cart</button>--> 
+    
+        <hr>
+        <h4>Location</h4>
+        <p>{{ car.location}}</p>
+    
+        <a routerLink="/cars" class="mt-5">Back to Car List</a>
+    </div>
+
+</div>
