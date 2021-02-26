@@ -9,6 +9,7 @@ import { CarService } from './services/car.service';
 import { Routes, RouterModule} from '@angular/router';
 import { CarWarehouseMenuComponent } from './components/car-warehouse-menu/car-warehouse-menu.component';
 import { CarDetailsComponent } from './components/car-details/car-details.component';
+import { CartStatusComponent } from './components/cart-status/cart-status.component';
 
 const routes: Routes = [
   {path : 'cars/:id', component: CarDetailsComponent},
@@ -25,7 +26,8 @@ const routes: Routes = [
     AppComponent,
     CarListComponent,
     CarWarehouseMenuComponent,
-    CarDetailsComponent
+    CarDetailsComponent,
+    CartStatusComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
