@@ -11,8 +11,6 @@ import { CarWarehouse } from '../common/car-warehouse';
 })
 export class CarService {
 
-  
-
   private appUrl = environment.ecommerceAppUrl;
 
   private baseUrl = this.appUrl + "/cars";
