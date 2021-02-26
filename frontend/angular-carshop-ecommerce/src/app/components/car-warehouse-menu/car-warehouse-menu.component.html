@@ -1,0 +1,15 @@
+<div class="menu-sidebar-content js-scrollbar1">
+    <nav class="navbar-sidebar">
+        <ul class="list-unstyled navbar-list">
+
+            <li *ngFor="let tempCarWarehoouse of carWarehouses">
+
+                <a routerLink="/warehouse/{{ tempCarWarehoouse.id }}/{{ tempCarWarehoouse.name }}" routerLinkActive="active-link">
+                    {{ tempCarWarehoouse.name }}
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
