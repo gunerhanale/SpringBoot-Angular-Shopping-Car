@@ -1,4 +1,6 @@
-DROP SCHEMA IF EXISTS `car-shop-ecommerce`;
+CREATE USER 'car_shop'@'localhost' IDENTIFIED BY 'car_shop123';
+GRANT ALL PRIVILEGES ON * . * TO 'car_shop'@'localhost';
+ALTER USER 'car_shop'@'localhost' IDENTIFIED WITH mysql_native_password BY 'car_shop123';
 
 CREATE SCHEMA `car-shop-ecommerce`;
 USE `car-shop-ecommerce` ;
